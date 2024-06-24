@@ -10,7 +10,7 @@ export default class StartingPage {
     async clickWeitermachenButton() {
         await this.WeitermachenButton().click();
     }
-
+    
     async checkLoginURL(expectedLoginUrlPart: string) {
         const currentUrl = this.page.url();
         expect(currentUrl).toContain(expectedLoginUrlPart);
